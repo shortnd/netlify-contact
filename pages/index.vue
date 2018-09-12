@@ -1,7 +1,6 @@
 <template>
   <section class="container">
     <div>
-      <app-logo/>
       <h1 class="title">
         netlify-contact
       </h1>
@@ -9,10 +8,9 @@
         Nuxt.js project
       </h2>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
+        <nuxt-link
+          to="/contact"
+          class="button--green">Contact</nuxt-link>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
@@ -23,12 +21,8 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
 
 export default {
-  components: {
-    AppLogo
-  }
 }
 </script>
 
